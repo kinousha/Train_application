@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "d59192a3-66e8-42c8-a285-0437ac7eafc9",
+		"name": "Application-train",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20832601"
+	},
+	"item": [
+		{
+			"name": "Book train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "source",
+							"value": "coimbatore",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "karur",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-03-14T19:50:33.458Z",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/train/getTrains",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"train",
+						"getTrains"
+					]
+				},
+				"description": "Create train"
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bookingId",
+							"value": "64119aae4dc3c81d5fda0c5e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/train/cancelTrain",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"train",
+						"cancelTrain"
+					]
+				},
+				"description": "Cancel train"
+			},
+			"response": []
+		},
+		{
+			"name": "Get endpoints",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3200/train/getEndPoints",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"train",
+						"getEndPoints"
+					]
+				},
+				"description": "Get endpoints"
+			},
+			"response": []
+		},
+		{
+			"name": "Search a train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "source",
+							"value": "coimbatore",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "karur",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-03-14T19:50:33.458Z",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/train/getTrains",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"train",
+						"getTrains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "f",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kinousha134@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "77777878756",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "passer",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/user/createUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"user",
+						"createUser"
+					]
+				},
+				"description": "Create User"
+			},
+			"response": []
+		},
+		{
+			"name": "Sign in user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "kinousha134@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "passer",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "77777878756",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "passer",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3200/train/getBookingDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"train",
+						"getBookingDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
